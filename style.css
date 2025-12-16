@@ -1,105 +1,180 @@
-/* Global */
+/* ================= GLOBAL ================= */
+
 body {
     margin: 0;
-    font-family: "Inter", sans-serif;
+    font-family: "Inter", Arial, sans-serif;
     background: #0b0f19;
     color: #e4e4e4;
 }
 
-/* Header */
+a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0ea5e9;
+}
+
+/* ================= HEADER ================= */
+
 .header {
     text-align: center;
     padding: 50px 20px;
     background: #111827;
 }
+
 .header h1 {
-    font-size: 2.5rem;
-}
-.social-icons a {
-    margin: 0 10px;
-    font-size: 1.8rem;
-    color: #38bdf8;
+    font-size: 2.6rem;
+    margin-bottom: 10px;
 }
 
-/* Navbar */
+.header p {
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+.social-icons a {
+    margin: 0 12px;
+    font-size: 2rem;
+    color: #38bdf8;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #0ea5e9;
+}
+
+/* ================= NAVBAR ================= */
+
 .navbar {
     display: flex;
     justify-content: center;
+    gap: 25px;
     padding: 12px;
     background: #111;
-}
-.navbar a {
-    color: #bbb;
-    margin: 0 15px;
-    text-decoration: none;
-}
-.navbar a:hover {
-    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-/* Sections */
+.navbar a {
+    color: #cbd5e1;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+/* ================= SECTIONS ================= */
+
 .section {
     max-width: 1000px;
     margin: 50px auto;
     padding: 0 20px;
 }
+
 .section-title {
     font-size: 2rem;
     border-left: 5px solid #38bdf8;
     padding-left: 15px;
+    margin-bottom: 25px;
 }
 
-/* Cards */
+/* ================= CARDS (Skills/Projects) ================= */
+
 .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 20px;
+    gap: 22px;
 }
+
 .card {
     background: #111827;
     padding: 20px;
-    border: 1px solid #1e293b;
     border-radius: 10px;
-    transition: 0.3s;
+    border: 1px solid #1e293b;
     cursor: pointer;
-}
-.card:hover {
-    transform: translateX(5px);
-    border-color: #38bdf8;
+    transition: 0.3s;
 }
 
-/* Certification Cards */
+.card:hover {
+    border-color: #38bdf8;
+    transform: translateY(-5px);
+}
+
+/* ================= CERTIFICATION CARDS ================= */
+
 .cert-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 20px;
-}
-.cert-card img {
-    width: 100px;
-    display: block;
-    margin: 0 auto;
+    gap: 25px;
 }
 
-/* Slide-in Modal */
-.modal {
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.7);
-    display: flex;
-    justify-content: flex-end;
+.cert-card {
+    background: #111827;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #1e293b;
+    cursor: pointer;
+    text-align: center;
     transition: 0.3s;
 }
-.modal.hidden {
+
+.cert-card:hover {
+    border-color: #38bdf8;
+    transform: translateY(-5px);
+}
+
+.cert-icon {
+    width: 85px;
+    margin-bottom: 12px;
+    opacity: 0.9;
+}
+
+.cert-click {
+    font-size: 0.85rem;
+    opacity: 0.6;
+    margin-top: 8px;
+}
+
+/* ================= FULL CERT BADGE IMAGE ================= */
+
+.cert-full {
+    width: 220px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/* ================= MODAL (Slide-In Panel) ================= */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.65);
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+    z-index: 999;
+}
+
+.hidden {
     display: none;
 }
 
 .modal-panel {
     background: #1f2937;
-    width: 400px;
+    width: 420px;
     height: 100%;
     padding: 25px;
     animation: slideIn 0.3s ease forwards;
+    overflow-y: auto;
 }
 
 @keyframes slideIn {
@@ -111,5 +186,34 @@ body {
     float: right;
     font-size: 2rem;
     cursor: pointer;
-    color: #fff;
+    color: #e4e4e4;
+}
+
+/* ================= BUTTONS ================= */
+
+.credly-btn {
+    display: inline-block;
+    background: #38bdf8;
+    padding: 10px 18px;
+    border-radius: 8px;
+    color: #111827;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.credly-btn:hover {
+    background: #0ea5e9;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 2.2rem;
+    }
+
+    .modal-panel {
+        width: 100%;
+    }
 }
