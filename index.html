@@ -1,10 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="style.css">
-<script defer src="script.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devendra Reddy | Data & Cloud Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
-<h1>Portfolio Placeholder</h1>
+
+<header class="header">
+    <h1>Devendra Reddy Konasani</h1>
+    <p>Data Engineer • Cloud Engineer • AWS • Python ETL • ML Pipelines</p>
+
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/devendra-reddy-konasani-aa274119a/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Devendra-Reddy" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+</header>
+
+<nav class="navbar">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+    <h2 class="section-title">About Me</h2>
+    <p>
+        I am a Data Engineer & Cloud Engineer specializing in AWS-based data pipelines, ETL workflows,
+        Redshift modeling, Python ETL automation, NLP microservices, and event-driven cloud systems.
+        I enjoy building reliable, scalable architectures with strong observability and clean documentation.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="card-grid">
+
+        <div class="card skill-card" data-modal="skill1">
+            <h3>Data Engineering</h3>
+            <p>ETL • Redshift • Pipelines</p>
+        </div>
+
+        <div class="card skill-card" data-modal="skill2">
+            <h3>Cloud Engineering</h3>
+            <p>AWS • Lambda • S3 • Glue</p>
+        </div>
+
+        <div class="card skill-card" data-modal="skill3">
+            <h3>Programming</h3>
+            <p>Python • SQL • Docker</p>
+        </div>
+
+        <div class="card skill-card" data-modal="skill4">
+            <h3>NLP & ML</h3>
+            <p>BERT • SageMaker • HuggingFace</p>
+        </div>
+
+        <div class="card skill-card" data-modal="skill5">
+            <h3>Analytics</h3>
+            <p>Tableau • Power BI</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="card-grid">
+
+        <div class="card project-card" data-modal="proj1">
+            <h3>AWS Data Engineering Pipeline</h3>
+            <p>S3 → Glue → Redshift ETL</p>
+        </div>
+
+        <div class="card project-card" data-modal="proj2">
+            <h3>NLP Microservice Pipeline</h3>
+            <p>BERT • Docker • SageMaker</p>
+        </div>
+
+        <div class="card project-card" data-modal="proj3">
+            <h3>Hotel Booking Dashboard</h3>
+            <p>Tableau • KPIs • Trends</p>
+        </div>
+
+        <a href="https://github.com/Devendra-Reddy/Book-recommendation-system" 
+           target="_blank" class="card project-card">
+            <h3>Book Recommendation System</h3>
+            <p>Cosine Similarity • 100K+ users</p>
+        </a>
+
+        <a href="https://github.com/Devendra-Reddy/Hotel-management-System" 
+           target="_blank" class="card project-card">
+            <h3>Hotel Management System</h3>
+            <p>Database • SQL</p>
+        </a>
+
+    </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="section">
+    <h2 class="section-title">Certifications</h2>
+
+    <div class="cert-grid">
+
+        <div class="cert-card" data-modal="cert1">
+            <img src="images/aws_data_engineer_badge.png" alt="AWS Data Engineer Badge">
+            <h3>AWS Certified Data Engineer – Associate</h3>
+        </div>
+
+        <div class="cert-card" data-modal="cert2">
+            <img src="images/aws_ml_engineer_badge.png" alt="AWS ML Engineer Badge">
+            <h3>AWS Certified ML Engineer – Associate</h3>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+    <h2 class="section-title">Contact</h2>
+    <p>Email: <strong>devendrareddy826@gmail.com</strong></p>
+    <p>Phone: <strong>+1 480-385-9824</strong></p>
+</section>
+
+<!-- MODALS (Slide-in Panels) -->
+<div id="modal" class="modal hidden">
+    <div class="modal-panel">
+        <span id="close-btn">&times;</span>
+        <div id="modal-body"></div>
+    </div>
+</div>
+
 </body>
 </html>
