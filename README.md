@@ -1,7 +1,9 @@
-# Devendra-Reddy.github.io
 # Devendra Reddy Portfolio
 
-This repository hosts my professional portfolio site as a Data Engineer & Cloud Engineer.  
+🔗 **Live Portfolio Website:**  
+https://devendra-reddy.github.io  
+
+This repository hosts my professional portfolio site as a **Data Engineer & Cloud Engineer**.  
 The site is designed to be fully interactive, responsive, and recruiter-optimized, built with:
 
 - HTML5  
